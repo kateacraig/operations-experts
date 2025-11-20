@@ -665,7 +665,7 @@ a {
 
   .hero-title-container {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 150px) 1fr;
+    grid-template-columns: 1fr minmax(auto, 100px) 1fr;
     grid-gap: 1px;
     align-items: center;
     padding: 0;
