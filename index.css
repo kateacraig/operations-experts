@@ -665,14 +665,14 @@ a {
 
   .hero-title-container {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 120px) 1fr;
-    grid-gap: 1px;
+    grid-template-columns: 1fr minmax(10px 30px 10px) 1fr;
+    grid-gap: 0px;
     align-items: center;
-    padding: 0;
+    padding: 15px;
   }
 
   .hero-section img {
-    max-width: 60px;
+    max-width: 50px;
   }
 
   .host-image-wrapper img {
