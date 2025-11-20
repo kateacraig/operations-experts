@@ -639,12 +639,12 @@ a {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     letter-spacing: 2px;
   }
 
   .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .about-text {
@@ -672,7 +672,7 @@ a {
   }
 
   .hero-section img {
-    max-width: 50px;
+    max-width: 70px;
   }
 
   .host-image-wrapper img {
