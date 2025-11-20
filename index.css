@@ -639,12 +639,12 @@ a {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 2px;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .about-text {
