@@ -639,8 +639,12 @@ a {
 
 @media (max-width: 580px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 2px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.5rem;
   }
 
   .about-text {
@@ -662,13 +666,13 @@ a {
   .hero-title-container {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 350px) 1fr;
-    grid-gap: 15px;
+    grid-gap: 10px;
     align-items: center;
     padding: 0;
   }
 
   .hero-section img {
-    max-width: 90px;
+    max-width: 60px;
   }
 
   .host-image-wrapper img {
