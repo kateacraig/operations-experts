@@ -1,0 +1,741 @@
+/* ===================================
+   Operations Experts Podcast Page Styles
+   McClaskey Excellence Institute
+   =================================== */
+
+/* Color Variables */
+:root {
+  --primary-navy: #003b5c;
+  --primary-red: #c8102e;
+  --accent-blue: #0073b1;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --background-light: #f5f5f5;
+  --white: #ffffff;
+  --border-color: #e0e0e0;
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-flex {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+}
+
+/* ===================================
+   Hero Section
+   =================================== */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-navy) 0%, #004d73 100%);
+  padding: 60px 20px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+  grid-gap: 60px;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect fill="rgba(255,255,255,0.02)" width="100" height="100"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-section img {
+  max-width: 150px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-header {
+  margin-bottom: 30px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #4db8e8;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle sup {
+  font-size: 0.7em;
+}
+
+/* ===================================
+   About & Spotify Section
+   =================================== */
+.about-and-spotify-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 40px;
+  align-items: start;
+  background-color: var(--background-light);
+}
+
+/* ===================================
+   About Section
+   =================================== */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+/* ===================================
+   Spotify Section
+   =================================== */
+.spotify-section {
+  background-color: var(--background-light);
+  padding: 60px 20px;
+}
+
+.spotify-section iframe {
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===================================
+   Main Content Layout
+   =================================== */
+.main-content {
+  padding: 60px 0;
+  background-color: var(--white);
+}
+
+/* ===================================
+   Sidebar
+   =================================== */
+.sidebar {
+  flex: 0 0 250px;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+}
+
+.sidebar-section {
+  background-color: var(--background-light);
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.listen-links {
+  list-style: none;
+}
+
+.listen-links li {
+  margin-bottom: 15px;
+}
+
+.listen-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: var(--white);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.listen-link:hover {
+  background-color: var(--primary-navy);
+  color: var(--white);
+  border-color: var(--primary-navy);
+  transform: translateX(5px);
+}
+
+.platform-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  filter: invert(0);
+}
+
+.listen-link:hover .platform-icon {
+  filter: invert(1);
+}
+
+/* ===================================
+   Episodes Section - VERTICAL SCROLL
+   =================================== */
+.episodes-section {
+  flex: 1;
+}
+
+.episodes-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Vertical Scroll Container */
+.episodes-scroll-container {
+  height: 750px;
+  max-height: 750px;
+  overflow-y: scroll; /* Always show scrollbar */
+  overflow-x: hidden;
+  padding-right: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--background-light);
+}
+
+/* Custom Scrollbar Styling */
+.episodes-scroll-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.episodes-scroll-container::-webkit-scrollbar-track {
+  background: var(--background-light);
+  border-radius: 8px;
+}
+
+.episodes-scroll-container::-webkit-scrollbar-thumb {
+  background: var(--primary-navy);
+  border-radius: 8px;
+  border: 2px solid var(--background-light);
+}
+
+.episodes-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-red);
+}
+
+/* Firefox Scrollbar */
+.episodes-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-navy) var(--background-light);
+}
+
+.episodes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Episode Card */
+.episode-card {
+  display: flex;
+  gap: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  min-height: 200px;
+  align-items: center; /* ← ADD THIS LINE */
+}
+
+.episode-image {
+  flex: 0 0 200px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.episode-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.episode-date {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.episode-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.episode-description {
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.episode-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: var(--primary-red);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+}
+
+.episode-button:hover {
+  background-color: #a00d24;
+  transform: scale(1.05);
+}
+
+.episode-button::before {
+  content: "▶";
+  margin-right: 8px;
+  font-size: 0.8em;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  text-align: center;
+  padding: 15px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.scroll-indicator::after {
+  content: " ↓";
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+
+.view-all-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-all-link {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: var(--primary-navy);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.view-all-link:hover {
+  background-color: var(--accent-blue);
+  transform: scale(1.05);
+}
+
+/* ===================================
+   Hosts Section
+   =================================== */
+.hosts-section {
+  background-color: var(--background-light);
+  padding: 60px 20px;
+}
+
+.hosts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.host-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.host-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.host-image-wrapper {
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  background-color: var(--background-light);
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+.host-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.host-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.host-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.host-role {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.host-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-navy);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--primary-red);
+  transform: scale(1.1);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+/* ===================================
+   Producer Section
+   =================================== */
+.producer-section {
+  background-color: var(--white);
+  padding: 60px 20px;
+}
+
+.producer-card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--background-light);
+  border-radius: 8px;
+  padding: 0px 5px 20px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.producer-card .host-image-wrapper {
+  flex: 0 0 250px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.producer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.producer-card .host-info {
+  flex: 1;
+  text-align: left;
+  padding: 0;
+}
+
+.producer-card .host-social {
+  justify-content: flex-start;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+@media (max-width: 1024px) {
+  .container-flex {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    flex: 1;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-and-spotify-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section img {
+    max-width: 120px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .episode-card {
+    flex-direction: column;
+  }
+
+  .episode-image {
+    flex: none;
+    width: 100%;
+    height: 250px;
+  }
+
+  .producer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .producer-card .host-info {
+    text-align: center;
+  }
+
+  .producer-card .host-social {
+    justify-content: center;
+  }
+
+  .producer-card .host-image-wrapper {
+    flex: none;
+    width: 100%;
+  }
+
+  .hosts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 580px) {
+  .hero-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .about-section {
+    padding: 60px 20px 0px 20px;
+  }
+
+  .about-and-spotify-section {
+    grid-template-columns: 1fr;
+  }
+
+  .episode-title {
+    font-size: 1.2rem;
+  }
+
+  .hero-title-container {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 350px) 1fr;
+    grid-gap: 15px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .hero-section img {
+    max-width: 90px;
+  }
+
+  .host-image-wrapper img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 8px;
+  }
+
+  .producer-card .host-image-wrapper {
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    background-color: var(--white);
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 8px;
+  }
+
+  .producer-card .host-image-wrapper img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 5px;
+    margin-top: 25px;
+    border-radius: 8px;
+  }
+}
+
+/* ===================================
+   Badge/New Episode Indicator
+   =================================== */
+.new-badge {
+  display: inline-block;
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+/* ===================================
+   Accessibility
+   =================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus {
+  outline: 3px solid var(--primary-red);
+  outline-offset: 2px;
+}

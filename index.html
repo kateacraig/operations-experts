@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operations Experts Podcast - McClaskey Excellence Institute</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-title-container">
+        <div class="hero-image-david">
+          <img src="images/david-mcclaskey-circle.png" alt="David McClaskey" />
+        </div>
+        <div>
+          <h1 class="hero-title">OPERATIONS EXPERTS</h1>
+          <p class="hero-subtitle">
+            NEW EPISODES EVERY 1<sup>ST</sup> & 3<sup>RD</sup> MONDAY
+          </p>
+        </div>
+        <div class="hero-image-billy">
+          <img src="images/billy-schaefer-circle.png" alt="Billy Schaefer" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Spotify Section -->
+    <section class="about-and-spotify-section">
+      <!-- About Section -->
+      <div class="about-section">
+        <div class="container">
+          <h2 class="section-title">About The Podcast</h2>
+          <p class="about-text">
+            Delight your customers, reduce errors, and increase repeat business.
+            Take your operations from ordinary to extraordinary. The McClaskey
+            Excellence Institute bring you the Operations Experts, a podcast
+            with hosts David McClaskey, Founder and President of the McClaskey
+            Excellence Institute and Billy Schaefer, Vice-President of the
+            McClaskey Excellence Institute. Combined, they have over 80 years of
+            operations excellence experience to help companies deliver their
+            products and services 100% right, every time.
+          </p>
+        </div>
+      </div>
+
+      <!-- Spotify Embed Section -->
+      <div class="spotify-section">
+        <div class="container">
+          <h2 class="section-title">Listen on Spotify</h2>
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/show/00IlbNyMAOiWGj5lBHCm7H?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            class="spotify-embed"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <div class="container-flex">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Listen</h3>
+            <ul class="listen-links">
+              <li>
+                <a
+                  href="https://open.spotify.com/show/00IlbNyMAOiWGj5lBHCm7H"
+                  target="_blank"
+                  ref="noopener"
+                  class="listen-link"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/spotify.svg"
+                    alt="Spotify"
+                    class="platform-icon"
+                  />
+                  <span>SPOTIFY</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://podcasts.apple.com/us/podcast/operations-experts/id1829535567"
+                  target="_blank"
+                  ref="noopener"
+                  class="listen-link"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/applepodcasts.svg"
+                    alt="Apple Podcasts"
+                    class="platform-icon"
+                  />
+                  <span>APPLE PODCASTS</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://music.amazon.com/podcasts/f88ffc57-2bc4-4c6a-83da-5b78093a5c39/operations-experts"
+                  target="_blank"
+                  ref="noopener"
+                  class="listen-link"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazon.svg"
+                    alt="Amazon Music"
+                    class="platform-icon"
+                  />
+                  <span>Amazon Music</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.audible.com/podcast/Operations-Experts/B0FKD9XJZQ?source_code=ASSGB149080119000H&share_location=pdp"
+                  target="_blank"
+                  ref="noopener"
+                  class="listen-link"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/audible.svg"
+                    alt="Audible"
+                    class="platform-icon"
+                  />
+                  <span>Audible</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLF2RurhI5yTnMNB406g33yX8m6jYRjlSO"
+                  target="_blank"
+                  ref="noopener"
+                  class="listen-link"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg"
+                    alt="YouTube"
+                    class="platform-icon"
+                  />
+                  <span>YouTube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Episodes Section -->
+        <main class="episodes-section">
+          <div class="episodes-header">
+            <h2 class="section-title">LATEST EPISODES</h2>
+          </div>
+
+          <!-- Scroll Indicator -->
+          <div class="scroll-indicator">Scroll to see all episodes</div>
+
+          <!-- Vertical Scroll Container (WRAPPER FOR SCROLLING) -->
+          <div class="episodes-scroll-container">
+            <!-- Episodes will be loaded here dynamically -->
+            <div id="episodes-container" class="episodes-list">
+              <div class="loading">Loading episodes...</div>
+            </div>
+          </div>
+
+          <div class="view-all-container">
+            <a
+              href="https://open.spotify.com/show/00IlbNyMAOiWGj5lBHCm7H"
+              class="view-all-link"
+              >VIEW ALL EPISODES →</a
+            >
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Hosts Section -->
+    <section class="hosts-section">
+      <div class="container">
+        <h2 class="section-title">Hosts</h2>
+        <div class="hosts-grid">
+          <!-- Host 1: David McClaskey -->
+          <div class="host-card">
+            <div class="host-image-wrapper">
+              <a
+                href="https://mcclaskeyexcellence.com/about/our-team-2/david-j-mcclaskey/"
+                target="_blank"
+                ref="noopener"
+              >
+                <img
+                  src="images/david-mcclaskey.jpeg"
+                  alt="David McClaskey"
+                  class="host-image"
+                />
+              </a>
+            </div>
+            <div class="host-info">
+              <a
+                href="https://mcclaskeyexcellence.com/about/our-team-2/david-j-mcclaskey/"
+                target="_blank"
+                ref="noopener"
+              >
+                <h3 class="host-name">David McClaskey</h3></a
+              >
+              <p class="host-role">
+                Host | President, McClaskey Excellence Institute
+              </p>
+              <div class="host-social">
+                <a
+                  href="https://www.linkedin.com/in/david-mcclaskey-78133510/"
+                  target="_blank"
+                  class="social-link"
+                  aria-label="David McClaskey LinkedIn"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                    alt="LinkedIn"
+                    class="social-icon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Host 2: Billy Schaefer -->
+          <div class="host-card">
+            <div class="host-image-wrapper">
+              <a
+                href="https://mcclaskeyexcellence.com/about/our-team-2/billy-schaefer-2/"
+                target="_blank"
+                ref="noopener"
+              >
+                <img
+                  src="images/billy-schaefer.png"
+                  alt="Billy Schaefer"
+                  class="host-image"
+                />
+              </a>
+            </div>
+            <div class="host-info">
+              <a
+                href="https://mcclaskeyexcellence.com/about/our-team-2/billy-schaefer-2/"
+                target="_blank"
+                ref="noopener"
+              >
+                <h3 class="host-name">Billy Schaefer</h3></a
+              >
+              <p class="host-role">
+                Host | Vice President, McClaskey Excellence Institute
+              </p>
+              <div class="host-social">
+                <a
+                  href="https://www.linkedin.com/in/billy-schaefer-b6a12041/"
+                  target="_blank"
+                  class="social-link"
+                  aria-label="Billy Schaefer LinkedIn"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                    alt="LinkedIn"
+                    class="social-icon"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Producer Section -->
+    <section class="producer-section">
+      <div class="container">
+        <h2 class="section-title">Producer</h2>
+        <div class="producer-card">
+          <div class="host-image-wrapper">
+            <a
+              href="https://katecraigconsulting.com/about/"
+              target="_blank"
+              ref="noopener"
+            >
+              <img
+                src="images/kate-craig.jpg"
+                alt="Kate Craig"
+                class="host-image"
+              />
+            </a>
+          </div>
+          <div class="host-info">
+            <a
+              href="https://katecraigconsulting.com/about/"
+              target="_blank"
+              ref="noopener"
+            >
+              <h3 class="host-name">Kate Craig</h3></a
+            >
+            <p class="host-role">
+              Producer & Editor | President, Kate Craig Consulting
+            </p>
+            <div class="host-social">
+              <a
+                href="https://www.linkedin.com/in/kate-craig-tn/"
+                target="_blank"
+                class="social-link"
+                aria-label="Kate Craig LinkedIn"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  class="social-icon"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/KateCraigTN"
+                target="_blank"
+                class="social-link"
+                aria-label="Kate Craig Facebook"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg"
+                  alt="Facebook"
+                  class="social-icon"
+                />
+              </a>
+              <a
+                href="https://katecraigconsulting.com/"
+                target="_blank"
+                class="social-link"
+                aria-label="Kate Craig Consulting Website"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  class="social-icon website-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
