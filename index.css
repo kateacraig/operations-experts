@@ -521,50 +521,6 @@ a {
 }
 
 /* ===================================
-   Producer Section
-   =================================== */
-.producer-section {
-  background-color: var(--white);
-  padding: 60px 20px;
-}
-
-.producer-card {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: var(--background-light);
-  border-radius: 8px;
-  padding: 0px 5px 20px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.producer-card .host-image-wrapper {
-  flex: 0 0 250px;
-  height: 100%;
-  border-radius: 8px;
-}
-
-.producer-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-}
-
-.producer-card .host-info {
-  flex: 1;
-  text-align: left;
-  padding: 0;
-}
-
-.producer-card .host-social {
-  justify-content: flex-start;
-}
-
-/* ===================================
    Responsive Design
    =================================== */
 @media (max-width: 1024px) {
@@ -614,20 +570,15 @@ a {
     height: 250px;
   }
 
-  .producer-card {
-    flex-direction: column;
+  .host-info {
     text-align: center;
   }
 
-  .producer-card .host-info {
-    text-align: center;
-  }
-
-  .producer-card .host-social {
+  .host-social {
     justify-content: center;
   }
 
-  .producer-card .host-image-wrapper {
+  .host-image-wrapper {
     flex: none;
     width: 100%;
   }
@@ -685,7 +636,7 @@ a {
     border-radius: 8px;
   }
 
-  .producer-card .host-image-wrapper {
+  .host-image-wrapper {
     width: 300px;
     height: 350px;
     overflow: hidden;
@@ -695,7 +646,7 @@ a {
     border-radius: 8px;
   }
 
-  .producer-card .host-image-wrapper img {
+  .host-image-wrapper img {
     width: 250px;
     height: 300px;
     object-fit: cover;
